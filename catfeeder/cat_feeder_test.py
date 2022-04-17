@@ -1,6 +1,6 @@
 import unittest
 
-from cat_feeder import CatFeeder
+from catfeeder.cat_feeder import CatFeeder
 
 class MockMotor():
   def __init__(self):
