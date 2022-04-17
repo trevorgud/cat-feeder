@@ -15,7 +15,7 @@ class MockCamera():
     self.files = []
 
   def cap_image(self, file):
-    # Track which image files have been writtern.
+    # Track which image files have been written.
     self.files.append(file)
 
 class TestCatFeeder(unittest.TestCase):

@@ -1,4 +1,4 @@
-from rpi_motor import PiGpioMotor
+from catfeeder.rpi_motor import PiGpioMotor
 
 def main():
   motor = PiGpioMotor(pin = 16, rpm = 25)

@@ -1,6 +1,6 @@
-from camera import Camera
-from cat_feeder import CatFeeder
-from rpi_motor import PiGpioMotor
+from catfeeder.camera import Camera
+from catfeeder.cat_feeder import CatFeeder
+from catfeeder.rpi_motor import PiGpioMotor
 import argparse
 import logging
 import picamera as picam
