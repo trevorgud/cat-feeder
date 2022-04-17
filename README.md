@@ -4,7 +4,7 @@ Motorized cat food dispenser with optional camera module
 ### Install
 Must be run on a Raspberry Pi, from project root:
 ```bash
-sudo pip install .
+sudo python3 -m pip install .
 ```
 
 ### Run
