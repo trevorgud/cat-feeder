@@ -17,11 +17,12 @@ class CatFeeder():
   # Feed (dispense) the given number of units from the feeder.
   def feed(self, units):
     rotations = units / self._units_per_rotation()
-    self._motor.rotate(rotations)
+    self._logger.info(f'Feeding {units} units ({rotations} rotations)...')
+    # self._motor.rotate(rotations)
     # Pause for feeding to complete.
     time.sleep(self._capture_pause_secs())
     self._camera_capture()
-    self._logger.info(f"Fed {units} units")
+    self._logger.info(f'Fed {units} units')
 
   def _camera_capture(self):
     if self._camera is None:

@@ -1,3 +1,5 @@
+import time
+
 class Camera():
   def __init__(self, camera):
     self._camera = camera
@@ -7,6 +9,7 @@ class Camera():
     self._camera.capture(file)
 
   def cap_video(self, file, duration):
+    pass
     # TODO: Implement
 
   def _warmup(self):
