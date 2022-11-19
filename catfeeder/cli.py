@@ -10,7 +10,7 @@ def main():
   args = parse_args()
 
   # TODO: Load a config file for some params.
-  motor = PiGpioMotor(pin = 16, rpm = 25)
+  motor = PiGpioMotor(pin = 16, rpm = 15)
 
   hwcam = picam.PiCamera()
   hwcam.resolution = (1920, 1080)
