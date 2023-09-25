@@ -24,8 +24,8 @@ def parse_args():
   parser.add_argument(
     '--units',
     dest = 'units',
-    type = int,
-    default = 1,
+    type = float,
+    default = 1.0,
     help = 'how many units of food to dispense',
   )
   args = parser.parse_args()
