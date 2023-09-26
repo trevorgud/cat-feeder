@@ -6,7 +6,11 @@ import logging
 import picamera as picam
 
 def main():
-  logging.basicConfig(level = logging.INFO)
+  logging.basicConfig(
+    format = '%(asctime)s %(levelname)-8s %(message)s',
+    level = logging.INFO,
+    datefmt = '%Y-%m-%d %H:%M:%S',
+  )
   args = parse_args()
 
   # TODO: Load a config file for some params.
